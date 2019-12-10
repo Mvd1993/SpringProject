@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+
+<!-- Cabecera -->
+
+
+<div class="w3-top"> 
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+ 
+
+ <!--    
+ <form  class="w3-row-padding w3-padding-16" style="max-width:1200px;margin:auto"method="post" action="viewproducts" id="category" name="category">  
+	<select name="category">
+    <option value="" disabled selected>Category</option>
+    <option value="tv">TV</option>
+    <option value="home">Home</option>
+    <option value="phones">Phones</option>
+    <option value="computer">Computer</option>
+    <option value="gameconsoles">Game Consoles</option>
+    <option value="sports">Sports</option>
+    <option value="cameras">Cameras</option>
+    <option value="watches">Watches</option>
+  </select>
+  <button class="w3-btn w3-orange w3-text-white" type="submit">search</button>
+   </form> -->
+  
+
+
+
+
+
+
+     <div  class="w3-button w3-right w3-orange w3-text-white w3-large"onclick="document.getElementById('id01').style.display='block'">Login</div>
+    
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+      <div class="w3-center"><br>
+
+  <form class="w3-container" action="login">
+        <div class="w3-section">
+          <label for="email"><b>Email</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="email" id="email" required>
+         <label for="password"><b>Password</b></label>
+          <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="password"  id="password" required>
+          <button class="w3-button w3-block w3-light-blue w3-section w3-padding" style="color:white" type="submit">Login</button>
+          
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-right w3-red">Cancel</button>
+       
+      </div>
+</div>
+      </form>
+    </div>
+  </div>
+</div>
+
+ <div class=" w3-right w3-large w3-padding-16 margin:20px"><a href="register">Register</a></div>
+   <div class="w3-center w3-padding-16"><a title="Letras" href="megapop"><img src="https://i.ibb.co/MM5qtS3/Letras.jpg" alt="Letras" border="0"  style="width:10%"></a></div>
+   
+  </div>
+   
+</div>
+ <p>  
+<!-- Cuerpo Pagina -->
+
+
+<div class="w3-container w3-padding-16 w3-center" style="max-width:1200px;margin:auto;margin-top:46px">
+<p>
+<p>
+
+
+    <img src="https://i.ibb.co/Xzt9BSb/eslogan.jpg" alt="eslogan" border="0">
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" style="max-width:1200px;margin:auto" id="bicicleta">     
+    
+    <div class="w3-col l3 m6 w3-margin-bottom w3-center" >
+   
+      <img src="https://tiendadish.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/5/0/50uk6500aua.jpg" border="0" alt="tv" style="width:100%">
+      <h3><b>TV</b></h3>
+      <p><em>Watch your series in the best quality.</em></p>     
+      <p><a th:href="@{/{category}(category=tv)}"  class="w3-button w3-large w3-orange w3-text-white w3-block">Filter</button></a></p>
+    </div>
+   <div class="w3-col l3 m6 w3-margin-bottom w3-center">
+ 
+      <img src="https://petertysonappliances.co.uk/media/catalog/product/cache/1/thumbnail/1500x1500/9df78eab33525d08d6e5fb8d27136e95/w/t/wtf130.jpg" border="0" alt="bicicleta" style="width:100%">
+      <h3><b>Home</b></h3>
+      <p><em>Products to enjoy your home.</em></p>
+     <p><a th:href="@{/{category}(category=home)}"  class="w3-button w3-large w3-orange w3-text-white w3-block">Filter</button></a></p>
+    </div>
+   <div class="w3-col l3 m6 w3-margin-bottom w3-center">
+      
+       <img src="https://www.altonsports.co.uk/wp-content/uploads/2018/11/polar-vantage-v-white-1500x1500.jpg" border="0" alt="bicicleta" style="width:100%">
+      <h3><b>Watch</b></h3>
+      <p><em>Your time always controlled.</em></p>
+      <p><a th:href="@{/{category}(category=watch)}"  class="w3-button w3-large w3-orange w3-text-white w3-block">Filter</button></a></p>     
+    </div>
+   <div class="w3-col l3 m6 w3-margin-bottom w3-center">
+     
+       <img src="https://www.pc-canada.com/dd2/img/item/A-1500x1500/983266-1.jpg" border="0" alt="bicicleta" style="width:100%">
+      <h3><b>Computer</b></h3>
+      <p><em>Create your own projects.</em></p>
+      <p><a th:href="@{/{category}(category=computer)}"  class="w3-button w3-large w3-orange w3-text-white w3-block">Filter</button></a></p>
+    </div>
+  </div>
+  
+ <div class="w3-row-padding w3-padding-16 w3-center" style="max-width:1200px;margin:auto" id="bicicleta">
+    <div class="w3-col l3 m6 w3-margin-bottom w3-center">
+      
+        <img src="https://www.wesave.my/image/wesave/image/cache/data/all_product_images/product-1914/sony-ps4-pro-console-001-1500x1500.jpg" border="0" alt="bicicleta" style="width:100%">
+      <h3><b>Game Console</b></h3>
+      <p><em>Live your adventures in 4K.</em></p>
+    <p><a th:href="@{/{category}(category=gameconsoles)}"  class="w3-button w3-large w3-orange w3-text-white w3-block">Filter</button></a></p>
+    </div>
+   <div class="w3-col l3 m6 w3-margin-bottom w3-center">
+   
+     <img src="https://www.ifixmobiles.ae/image/cache/catalog/Apple%20iPhone%20XS%20Max%20With%20Facetime%20-%20512GB,%204G%20LTE,%20Gold%203-1500x1500.jpg" border="0" alt="bicicleta" style="width:100%">
+      <h3><b>Phones</b></h3>
+      <p><em>Connecting people.</em></p>
+      <p><a th:href="@{/{category}(category=phones)}"  class="w3-button w3-large w3-orange w3-text-white w3-block">Filter</button></a></p>
+    </div>
+   <div class="w3-col l3 m6 w3-margin-bottom w3-center">
+      
+        <img src="https://www.forall.com.gr/image/cache/catalog/podhlata%20new/18051-24-1500x1500.jpg" border="0" alt="bicicleta" style="width:100%">
+      <h3><b>Sports</b></h3>
+      <p><em>Keep calm and keep running.</em></p>
+     <p><a th:href="@{/{category}(category=sports)}"  class="w3-button w3-large w3-orange w3-text-white w3-block">Filter</button></a></p>      
+    </div>
+   <div class="w3-col l3 m6 w3-margin-bottom w3-center">
+    
+      <img src="https://camerastorestorage.blob.core.windows.net/70dbf2066dcc4220bfa96dbe9f4a86c9/Images/Products12747-1500x1500-373136.jpg" border="0" alt="bicicleta" style="width:100%">
+      <h3><b>Cameras</b></h3>
+      <p><em>Inmortalice your moments.</em></p>
+      <p><a th:href="@{/{category}(category=cameras)}"  class="w3-button w3-large w3-orange w3-text-white w3-block">Filter</button></a></p>
+  
+    </div>
+    
+  </div>
+ 
+  </div>
+ 
+<!-- CONTACTO -->
+
+<div class="w3-content w3-container w3-padding-64" id="contact">
+<div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="https://i.ibb.co/Fz4SFZJ/barcelona.jpg" alt="barcelona" border="0" class="w3-image w3-round" style="width:100%">
+    </div>
+     <img src="https://i.ibb.co/sbyJqb9/M.png" alt="M" border="0" style="width:10%" class="w3-right">
+  <h3 class="w3-center">WHERE WE WORK</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Barcelona, Spain<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 9330540987<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> clients@megapop.es<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave us a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-orange w3-text-white w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer class="w3-container w3-padding-64 w3-center w3-xlarge">
+<img src="https://i.ibb.co/Kj66L0D/Logo-completo-jpg.jpg" alt="Logo-completo-jpg" border="0"style="width:5%"></a> 
+<p class="w3-medium">Copyright © 2019 megapop</p>
+
+</body>
+</html>
